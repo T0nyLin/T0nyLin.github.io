@@ -1,0 +1,39 @@
+h1{color:red}
+
+body{
+    background-color: silver;
+    color: black;
+    font-family: "Helvetica", "Arial", sans-serif; /*list down back-ups fonts to use*/
+}
+
+p{
+    margin:10px; /*space between elements*/
+    padding: 20px; /*space inside the element*/
+
+    /*if you want a border around your paragraphs*/
+    border-style: solid;
+    border-width: 13px;
+    text-align: justify;
+}
+/*id*/
+#description:hover {
+    color: blue;
+}
+#foods{
+    background-color: brown;
+    text-align: center;
+}
+
+/* class */
+.item1{
+    color: darkgreen;
+}
+/* Descendant selector */
+ol li{
+    background-color: coral;
+    text-align: center;
+}
+/* child selector */
+li > b {
+    color:bisque;
+}
